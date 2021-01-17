@@ -1,29 +1,19 @@
 body {
-  margin: .5%;
+  margin: 0%;
   display: grid;
-  grid-template-rows: 10% 1fr 10%;
   background-color: turquoise;
 }
 
-main {
-  height: fit-content;
-}
 nav {
+  padding: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-footer {
-  display: flex;
-}
-
-p {
-  margin: 5px 5px 5px 5px;
-  display: flex;
-}
-
 .nasa-slide { 
+  grid-row: span;
+  background-color: black;
   width: 1fr; 
   height: 1fr; 
   padding-bottom: 50%;
@@ -40,9 +30,25 @@ p {
   height: auto;
 }
 
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  display: flex;
+}
+
+p {
+  margin: 2%;
+}
+
+
 @keyframes 
 nasa-slide {
-  25%{opacity:1;} 
+  15%{opacity:1;} 
   40%{opacity:0;}}
 .nasa-slide img:nth-child(4)
   {animation-delay:0s;}
