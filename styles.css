@@ -1,60 +1,32 @@
-body {
-  margin: 0%;
-  display: grid;
-  background-color: turquoise;
-}
-
-nav {
-  padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.nasa-slide { 
-  grid-row: span;
-  background-color: black;
-  width: 1fr; 
-  height: 1fr; 
-  padding-bottom: 50%;
-  position: static;  
-  overflow:hidden; 
-  position:relative;
-}
-
-.nasa-slide img { 
-  position:absolute; 
-  animation: nasa-slide 32s infinite; 
-  opacity:0; 
-  width: 100%; 
-  height: auto;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-footer {
-  display: flex;
-}
-
-p {
-  margin: 2%;
-}
 
 
-@keyframes 
-nasa-slide {
-  15%{opacity:1;} 
-  40%{opacity:0;}}
-.nasa-slide img:nth-child(4)
-  {animation-delay:0s;}
-.nasa-slide img:nth-child(3)
-  {animation-delay:8s;}
-.nasa-slide img:nth-child(2)
-  {animation-delay:16s;}
-.nasa-slide img:nth-child(1)
-  {animation-delay:24s;}
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
