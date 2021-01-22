@@ -38,6 +38,29 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
+.well {
+  background-color: transparent;
+}
+
+
+
+.thumbnail {
+  background-color: transparent;
+  border: none;
+}
+
+a {
+  margin: 20px;
+  color: #2d3436;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+}
+
 img {
+  margin: 5px;
+  border-radius: 4px;
   margin-bottom: 20px;
 }
